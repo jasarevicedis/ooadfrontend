@@ -1,0 +1,88 @@
+/*
+<div class="item-img"></div>
+<div class="item-info">
+    <div class="upper-part">
+        <p class="item-title"></p>
+    </div>
+    <div class="middle-part">
+        <div class="item-tag">Novo</div>
+    </div>
+    <div class="lower-part">
+        <p class="time-added"></p>
+        <p class="price"></p>
+    </div>
+</div>*/
+:host {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    //border-radius: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    .item-img {
+        height: 120px;
+        width: 100%;
+        display: flex;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    .item-info {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .upper-part {
+            height: 22px;
+            width: 100%;
+            margin-left: 10px;
+            
+            .item-title {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+        }
+        .middle-part {
+            height: 22px;
+            width: 100%;
+            .item-tag {
+                width: 40px;
+                height: 20px;
+                background-color: rgb(187, 159, 244);
+                margin-left: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgb(195, 110, 203);
+                border-radius: 4px;
+                color: rgb(255, 253, 248);
+                P {
+                    font-size: 11px;
+                }
+            }
+        }
+        .lower-part {
+            height: 22px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .time-added {
+                font-size: 13px;
+                margin-left: 10px;
+                color: rgb(93, 91, 93);
+            }
+            .price {
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
