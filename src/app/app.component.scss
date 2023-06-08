@@ -7,108 +7,29 @@
     .page-content {
         display: flex;
         width: 100%;
-        min-height: calc(100vh - 150px);
+        min-height: 100vh;
         background-color: rgb(232, 235, 235);
         //margin-top: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        /*
-        <div class="page-content">
-  <div class="path-container"></div>
-  <div class="item-container">
-    <div class="item-img"></div>
-    <div class="item-details">
-      <p class="item-id">Artikl #: 33245</p>
-      <p class="item-title">Schrack busilica 24A, 120mm</p>
-      <p class="item-price">BAM <span id="price-value" >120,50 </span>KM</p>
-      <div class="item-storage">
-        <i class="fa-solid fa-truck fa-lg"></i>
-        <p>13 Kom, Sarajevo</p>
-      </div>
-      <div class="item-input-form">
-        <p>Kolicina: </p>
-        <input type="number" name="" id="ammount">
-      </div>
-      <button class="rent-button"></button>
-    </div>
-  </div>
-</div>*/
-        .path-container {
-            width: 80%;
-            height: 50px;
-            margin-top: 20px;
-            background-color: white;
-            border: 1px solid black;
+        .left-section {
+            width: 300px;
+            height: 100%;
+            //background-color: chocolate;
             display: flex;
+            //position: fixed;
+            justify-content: center;
+            //margin-top: 50px;
         }
-        .item-container {
+        .right-section {
+            width: calc(100% - 300px);
+            height: 100%;
             display: flex;
-            margin-top: 20px;
-            width: 80%;
-            height: 480px;
-            background-color: rgb(255, 255, 255);
-            margin-bottom: 150px;
-            .item-img {
-                width: 480px;
-                height: 480px;
-                display: flex;
-                background-color: black;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-            .item-details {
-                width: calc(100% - 480px);
-                height: 480px;
-                display: flex;
-                padding-left: 20px;
-                flex-direction: column;
-                padding-top: 20px;
-                .item-id {
-                    font-size: 20px;
-                }
-                .item-title {
-                    margin-top: 10px;
-                    font-size: 28px;
-                }
-                .item-price {
-                    font-size: 35px;
-                    margin-top: 50px;
-                }
-                .item-storage {
-                    margin-top: 10px;
-                    width: 300px;
-                    height: 30px;
-                    //background-color: bisque;
-                    display: flex;
-                    align-items: center;
-                    p {
-                        margin-left: 15px;
-                    }
-                }
-                .item-input-form {
-                    margin-top: 20px;
-                    width: 300px;
-                    height: 30px;
-                    //background-color: bisque;
-                    display: flex;
-                    align-items: center;
-                    input {
-                        margin-left: 15px;
-                        height: 100%;
-                    }
-                }
-                .rent-button {
-                    margin-top: 100px;
-                    height: 50px;
-                    width: 140px;
-                    background-color: rgb(177, 80, 177);
-                    border: 0px;
-                    border-radius: 8px;
-                }
+            .tools-grid {
+                margin-top: 3px;
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                //background-color: aquamarine;
+                grid-template-rows: 250px 250px;
             }
         }
     }
